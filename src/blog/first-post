@@ -1,0 +1,50 @@
+My First Blog Post
+Building My Resume Website with Cloud (On a $0 Budget)
+This is my first blog post.
+Today I worked on turning my resume into an actual website instead of just a PDF or a static page.
+The goal was simple: make something real, deploy it, and learn how cloud tools actually work.
+By the end of the day, I was honestly surprised by how much I built.
+What I did today
+I created a resume website using React and deployed it on GitHub Pages.
+Instead of stopping there, I wanted the site to feel more “alive”, so I added a real backend.
+Now my resume site has:
+A Resume page
+A Blog page (this one)
+A real visitor counter powered by a cloud API
+Everything is live and deployed.
+The tech I used (nothing fancy)
+I didn’t use anything paid or complicated.
+Frontend
+React
+GitHub Pages
+GitHub Actions (for deployment)
+Backend
+Cloudflare Workers (serverless API)
+Cloudflare D1 (database)
+All of this runs on free tiers.
+The visitor counter
+Instead of a fake number, I built a real visitor counter.
+Every time someone opens the page:
+The frontend calls an API
+The API updates a counter in a database
+The latest number is returned and shown on the page
+It sounds small, but it helped me understand how frontend, backend, and cloud services connect together.
+What I struggled with (and learned)
+Things didn’t work perfectly the first time.
+I ran into:
+CI build failures because of small ESLint issues
+GitHub Pages caching old versions
+API returning “Not Found” because of wrong paths
+The counter staying at 0 because the database wasn’t connected properly
+Local working, but production not working
+Fixing these taught me more than following a tutorial ever could.
+Why I’m writing this blog
+I want to document what I build and what I learn, even if it’s messy or imperfect.
+This blog is not meant to be “polished tutorials”.
+It’s more like a learning log — what I tried, what broke, and how I fixed it.
+What’s next
+Next, I want to:
+Turn blog posts into their own pages (/blog/some-title)
+Write more about the visitor counter and cloud setup
+Improve the design and layout
+Keep learning more about cloud and DevOps in a practical way
