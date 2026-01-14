@@ -1,7 +1,10 @@
-import { Routes, Route, Link, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import "./styles/site.css";
 import ResumePage from "./pages/ResumePage";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
+import "./App.css";
+
 
 export default function App() {
   return (
@@ -11,12 +14,13 @@ export default function App() {
         <Link to="/blog" className="nav-btn">Blog</Link>
       </nav>
 
+
       <Routes>
-        <Route path="/" element={<ResumePage />} />
+        <Route path="*" element={<ResumePage />} />
         <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/:slug" element={<BlogPostPage />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+         <Route path="/blog/:slug" element={<BlogPostPage />} />
       </Routes>
-    </>
+    
+     </>
   );
 }
